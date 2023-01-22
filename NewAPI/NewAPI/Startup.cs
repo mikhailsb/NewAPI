@@ -38,8 +38,10 @@ namespace NewAPI
             // Adiciona a interface e a caser de serviço no escopo.
             // Ao chamar a interface o programa automaticamente instanciará a classe.
             services.AddScoped<ICervejaServico, CervejaServico>();
+            services.AddScoped<IVinhoServico, VinhoServicos>();
 
             services.AddScoped<ICervejaRepositorio, CervejaDaperCRUDRepositorio>(s => new CervejaDaperCRUDRepositorio(Configuration.GetConnectionString("SQLServer")));
+            services.AddScoped<IVinhoRepositorio, VinhoDapperCRUDRepositorio>(s => new VinhoDapperCRUDRepositorio(Configuration.GetConnectionString("SQLServer")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -42,8 +42,6 @@ namespace NewAPI.Dominio.Servicos
                 throw new DBExceptions();
             }
         }
-
-
         public void Delete(int id)
         {
             var retorno = _cervejaRepositorio.DeleteCerveja(id);
