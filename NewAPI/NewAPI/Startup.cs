@@ -7,6 +7,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using NewAPI.Dominio.Interfaces;
+using NewAPI.Dominio.Servicos;
+using NewAPI.Repositorio.Repositorios;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,6 +35,10 @@ namespace NewAPI
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "NewAPI", Version = "v1" });
             });
+
+            services.AddScoped<ICervejaServico, CervejaServico>();
+
+            services.AddScoped<ICervejaRepositorio, CervejaSQLRepositorio>(s => new CervejaSQLRepositorio(Configuration.GetConnectionString("SQLServer")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
