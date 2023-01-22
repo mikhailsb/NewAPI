@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "AVH/H5LB/vGGgNyg+OT6FI2n4IzpKblm99i07WOmuLb8BI+2+tBaXsM5znjGhOtqZXErSPC/gHyAzrNHnUsICA==",
+  "dgSpecHash": "gtrJGJ1hCvUiKSqPbovJU+Wq8SbYVwesEbuh6GeNSOqjElL5xiBmeyyM22Lvtv/3XG3DhmNaVBnUMeU3Wv9u/g==",
   "success": true,
   "projectFilePath": "E:\\Projetos\\Git\\GitHub\\NewAPI\\NewAPI\\NewAPI\\NewAPI\\NewAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\anaom\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
+    "C:\\Users\\anaom\\.nuget\\packages\\dapper.simplecrud\\2.3.0\\dapper.simplecrud.2.3.0.nupkg.sha512",
+    "C:\\Users\\anaom\\.nuget\\packages\\microsoft.csharp\\4.4.0\\microsoft.csharp.4.4.0.nupkg.sha512",
     "C:\\Users\\anaom\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\anaom\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\anaom\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
